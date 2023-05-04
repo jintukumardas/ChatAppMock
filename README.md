@@ -1,8 +1,11 @@
-# Getting Started with Create React App
+# Chat App UI Mockup
 ![alt text](https://github.com/jintukumardas/ChatAppMock/blob/main/image.png?raw=true)
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
-## Available Scripts
+
+#Note
+Node modules are not included, need to install all the required modules in order to run the code.
+
+## Running the project 
 
 In the project directory, you can run:
 
