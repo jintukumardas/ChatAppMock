@@ -10,20 +10,20 @@ export default function ActiveConversations() {
 
   return (
     <div>
-      <Accordion sx={{ border: "none" }}>
+      <Accordion sx={{ border: "none"}}>
         <AccordionSummary
           expandIcon={<ExpandMoreIcon />}
           aria-controls="panel1a-content"
           id="panel1a-header"
         >
-          <Typography sx={{ fontWeight: "bold" }}>
+          <Typography sx={{ fontWeight: "bold", fontSize: "14px" }}>
             Active Conversations
           </Typography>
           <div className="active-conversations-count">4</div>
         </AccordionSummary>
         <AccordionDetails
           className="scrollable-content"
-          style={{ maxHeight: "280px", overflowY: "scroll" }}
+          style={{ maxHeight: "230px", overflowY: "scroll" }}
         >
           <UserCard
             userPhoto="/images/henry.png"
@@ -59,7 +59,7 @@ export default function ActiveConversations() {
           aria-controls="panel2a-content"
           id="panel2a-header"
         >
-          <Typography sx={{ fontWeight: "bold" }}>
+          <Typography sx={{ fontWeight: "bold", fontSize: "14px" }}>
             Archieve Conversations
           </Typography>
           <div className="active-conversations-count">7</div>

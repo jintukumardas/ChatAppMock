@@ -45,6 +45,7 @@ const useStyles = makeStyles((theme) => ({
   copyLinkIcon: {
     margin: theme.spacing(1),
     transform: "rotate(-45deg)",
+    fontSize: "0.8rem"
   }
 }));
 
@@ -61,7 +62,7 @@ function OnboardClientsCard() {
       <CardHeader
         className={classes.cardHeader}
         title={
-          <Typography variant="h5" className={classes.cardHeaderText}>
+          <Typography variant="h6" className={classes.cardHeaderText}>
             Onboard Clients
           </Typography>
         }
@@ -71,7 +72,7 @@ function OnboardClientsCard() {
           </Typography>
         }
       />
-      <Button variant="contained">Copy Link <LinkOutlinedIcon className={classes.copyLinkIcon}/></Button>
+      <Button variant="contained" className="copyLinkButton" sx={{height:"42px", fontSize:"0.8rem"}}>Copy Link <LinkOutlinedIcon className={classes.copyLinkIcon}/></Button>
     </Card>
   );
 }

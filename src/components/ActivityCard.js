@@ -4,7 +4,7 @@ import CancelIcon from "@mui/icons-material/Cancel";
 
 const useStyles = makeStyles((theme) => ({
   container: {
-    height: "300px",
+    height: "42%",
     borderRadius: 10,
     backgroundColor: "#F9FAFD",
     padding: theme.spacing(1),
@@ -24,7 +24,7 @@ const useStyles = makeStyles((theme) => ({
     padding: theme.spacing(1),
   },
   rectangleIcon: {
-    fontSize: 24,
+    fontSize: 20,
     marginRight: theme.spacing(1),
   },
   currentWeek: {
@@ -40,9 +40,8 @@ const useStyles = makeStyles((theme) => ({
     marginBottom: theme.spacing(1),
   },
   activityChart: {
-    height: "50px",
-    width: "50px",
-    maxWidth: "100%",
+    height: "80%", // Change height to 100%
+    width: "100%", // Change width to 100%
   },
   activityBar: {
     width: "20.28%", // 100% / 7 days = 14.28%

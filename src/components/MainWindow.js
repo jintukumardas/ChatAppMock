@@ -66,14 +66,14 @@ function MainWindow() {
           </div>
           <div className="column middle-column">
             <Box sx={{ height: "85%" }}>
-              <Chat messages={messages}/>
-              <ChatWindow/>
+              <Chat messages={messages} />
+              <ChatWindow />
             </Box>
           </div>
-          <div className="column right-column">
-            <RightCard />
-            <ActivityCard />
-            <OnboardClientsCard />
+          <div className="column right-column" style={{ display: "flex", flexDirection: "column" }}>
+            <RightCard style={{ flexGrow: 1}}/>
+            <ActivityCard style={{ flexGrow: 1, overflow: "auto", padding: "10px", margin: "10px", fontSize: "14px" }} />
+            <OnboardClientsCard style={{ flexGrow: 1, overflow: "auto", padding: "10px", margin: "10px", fontSize: "14px" }} />
           </div>
         </div>
       </div>

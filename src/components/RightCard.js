@@ -19,7 +19,7 @@ const useStyles = makeStyles((theme) => ({
     display: "flex",
     justifyContent: "center",
     alignItems: "center",
-    height: 60,
+    height: 40,
   },
   emailContainer: {
     display: "flex",
@@ -40,7 +40,7 @@ const useStyles = makeStyles((theme) => ({
     backgroundColor: "white",
     border: `2px solid #074BF3`,
     borderRadius: theme.shape.borderRadius,
-    padding: theme.spacing(1.5),
+    padding: theme.spacing(1),
     display: "flex",
     alignItems: "center",
     cursor: "pointer",
@@ -48,7 +48,7 @@ const useStyles = makeStyles((theme) => ({
   archiveIcon: {
     color: "#074BF3",
     marginRight: theme.spacing(1),
-    fontSize: "1.5rem",
+    fontSize: "1rem",
   },
 }));
 
@@ -63,19 +63,19 @@ function RightCard() {
         </div>
         <div className={classes.emailContainer}>
           <LocalPostOfficeOutlinedIcon />
-          <Typography variant="body1" component="div" sx={{ marginLeft: 1 }}>
+          <Typography variant="body1" component="div" sx={{ marginLeft: 1, fontSize: "0.9rem" }}>
             henryboyd@gmail.com
           </Typography>
         </div>
         <div className={classes.userContainer}>
           <AccountCircleOutlinedIcon />
-          <Typography variant="body1" component="div" sx={{ marginLeft: 1 }}>
+          <Typography variant="body1" component="div" sx={{ marginLeft: 1, fontSize: "0.9rem"  }}>
             Henry Boyd
           </Typography>
         </div>
         <div className={classes.archiveContainer}>
           <button className={classes.archiveButton}>
-            <Typography variant="body1">Archive</Typography>
+            <Typography variant="body1" sx={{ marginLeft: 1, fontSize: "0.8rem"}}>Archive</Typography>
             <Inventory2OutlinedIcon className={classes.archiveIcon} />
           </button>
         </div>
